@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: "Overpass", sans-serif;
+  background-color: rgb(18, 20, 23);
+  align-items: center;
+  justify-content: center;
+}
+body .container {
+  display: flex;
+  background-color: rgb(37, 45, 55);
+  color: hsl(0deg, 0%, 100%);
+  width: 350px;
+  height: 370px;
+  margin: 50px auto;
+  padding: 15px;
+  box-sizing: border-box;
+  border-radius: 24px;
+}
+body .container .card {
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+}
+body .container .card .star {
+  background-color: hsla(0deg, 0%, 100%, 0.1);
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  justify-content: center;
+  align-items: center;
+}
+body .container .card .star img {
+  width: 15px;
+}
+body .container .card h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+body .container .card p {
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(216deg, 12%, 54%);
+  line-height: 1.5;
+}
+body .container .card .rating {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  text-align: center;
+}
+body .container .card .rating input {
+  display: none;
+}
+body .container .card .rating input:checked + label {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(25deg, 97%, 53%);
+  transition: 0.3s;
+}
+body .container .card .rating label {
+  background-color: #323d49;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 100%;
+  color: hsl(217deg, 12%, 63%);
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+body .container .card .rating label:hover {
+  color: white;
+  background-color: #71808f;
+  transition: 0.3s;
+}
+body .container .card a {
+  background-color: hsl(25deg, 97%, 53%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  margin-top: 15px;
+  border-style: none;
+  border-radius: 20px;
+  text-decoration: none;
+  color: hsl(0deg, 0%, 100%);
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  font-weight: 400;
+}
+body .container .card a:hover {
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(25deg, 97%, 53%);
+  transition: 0.3s;
+}
+body .thankyou .card {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body .thankyou .card img {
+  width: 150px;
+  margin: 30px auto;
+}
+body .thankyou .card .rate-desc {
+  color: hsl(25deg, 97%, 53%);
+  background-color: #363e44;
+  border-radius: 30px;
+}
+body .thankyou .card .rate-desc p {
+  color: hsl(25deg, 97%, 53%);
+  margin: 5px 10px;
+}
+body .thankyou .card h2 {
+  margin: 30px 0 0 0;
+}
+body .hidden {
+  display: none;
+}/*# sourceMappingURL=main.css.map */

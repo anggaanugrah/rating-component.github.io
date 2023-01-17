@@ -1,0 +1,164 @@
+// Variable
+$font: 'Overpass', sans-serif;
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$blue: rgb(37, 45, 55);
+$darkBlue: rgb(18, 20, 23);
+
+
+// Style
+body {
+    // height: 600px;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: $font;
+    background-color: $darkBlue;
+    align-items: center;
+    justify-content: center;
+
+
+    .container {
+        display: flex;
+        background-color: $blue;
+        // background: radial-gradient(at 50% 0%, rgb(49, 59, 71) 0%, rgb(37, 45, 55) 100%);
+        color: $white;
+        width: 350px;
+        height: 370px;
+        margin: 50px auto;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 24px;
+
+        .card {
+            margin: 15px;
+            display: flex;
+            flex-direction: column;
+            
+            .star {
+            background-color: hsl(0, 0%, 100%, 0.1);
+            display: flex;
+            flex-direction: column;
+            width: 45px;
+            height: 45px;
+            border-radius: 100%;
+            justify-content: center;
+            align-items: center;
+
+                img {
+                    width: 15px;
+                }
+            }
+
+            h3 {
+                font-size: 28px;
+                font-weight: 700;
+                margin-top: 25px;
+                margin-bottom: 0;
+            }
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                color: $mediumGrey;
+                line-height: 1.5;
+            }
+
+            .rating {
+                display: flex;
+                justify-content: space-around;
+                margin: 10px 0;
+                text-align: center;
+
+                input {
+                    display: none;
+                    &:checked + label{
+                        color: $white;
+                        background-color: $orange;
+                        transition: 0.3s;
+                    }
+                }
+
+                label {
+                    background-color: #323d49;
+                    display: flex;
+                    width: 40px;
+                    height: 40px;
+                    font-weight: 700;
+                    font-size: 14px;
+                    border-radius: 100%;
+                    color: $lightGrey;
+                    cursor: pointer;
+                    align-items: center;
+                    justify-content: center;
+                    
+
+                    &:hover{
+                        color: white;
+                        background-color: #71808f;
+                        transition: 0.3s;
+                    }
+                }                   
+            }
+                
+
+            a {
+                background-color: $orange;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 40px;
+                margin-top: 15px;
+                border-style: none;
+                border-radius: 20px;
+                text-decoration: none;
+                color: $white;
+                font-size: 14px;
+                letter-spacing: 0.1em;
+                font-weight: 400;
+               
+                &:hover {
+                    background-color: $white;
+                    color: $orange;
+                    transition: 0.3s;
+                }
+            }         
+        }
+    }
+
+    .thankyou {
+        .card {
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            img {
+                width: 150px;
+                margin: 30px auto;
+            }
+
+            .rate-desc {
+                color: $orange;
+                background-color: #363e44;
+                border-radius: 30px;
+
+                p {
+                    color: $orange;
+                    margin: 5px 10px;
+                }
+            }
+
+            h2 {
+                margin: 30px 0 0 0;
+            }
+        }        
+    }
+
+    .hidden {
+        display: none;
+    }
+}
